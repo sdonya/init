@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for (( a = 0; a <= 10; a++ ))
+do
+for (( b = 0; b <= 10; b++ ))
+do
+  echo "$a * $b = $(($a * $b))";
+done
+echo ;
+done

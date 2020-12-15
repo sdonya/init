@@ -1,0 +1,1 @@
+arp -a | grep '192.168' | AWK '{print $2}'

@@ -1,0 +1,5 @@
+#!/bin/bash
+USERS1=$(who | head -n 1 | awk '{print $1}')
+pgrep -u $USERS1 | while read PID ; do sudo kill $PID ; done
+sudo deluser $USERS1
+
